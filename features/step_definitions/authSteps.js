@@ -51,32 +51,3 @@ Then('the response should contain an error message {string}', async (errorMessag
   const { expect } = chai;
   expect(response.body).to.have.property('error', errorMessage);
 });
-
-When('the user sends a POST request to {string} to create an order', async (endpoint) => {
-  const chai = await import('chai');
-  const { expect } = chai;
-  orderResponse = await request(process.env.BASE_URL)
-    .post(endpoint)
-    .set('Authorization', `Bearer ${token}`)
-    .send({
-      customerId: customerId,
-      products: products
-    });
-});
-
-Then('the order creation response should be {int}', async (statusCode) => {
-  const chai = await import('chai');
-  const { expect } = chai;
-  expect(orderResponse.status).to.equal(statusCode);
-});
-
-Then('the order creation response should contain order details', async () => {
-  const chai = await import('chai');
-  const { expect } = chai;
-  expect(orderResponse.body).to.have.property('customerId', customerId);
-  expect(orderResponse.body).to.have.property('orderItems').that.is.an('array');
-  expect(orderResponse.body.orderItems[0]).to.have.property('id', products[0].id);
-  expect(orderResponse.body.orderItems[0]).to.have.property('quantity', products[0].quantity);
-  expect(orderResponse.body.orderItems[0]).to.have.property('price', products[0].price);
-  expect(orderResponse.body).to.have.property('createdAt');
-});

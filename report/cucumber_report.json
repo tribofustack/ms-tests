@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8102500
+              "duration": 10704699
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 479564800
+              "duration": 479344499
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1813300
+              "duration": 2214600
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1786899
+              "duration": 1717000
             }
           }
         ],
@@ -82,7 +82,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7973500
+              "duration": 12148800
             }
           },
           {
@@ -95,7 +95,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 321445299
+              "duration": 317185099
             }
           },
           {
@@ -108,7 +108,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1818300
+              "duration": 1787000
             }
           },
           {
@@ -121,7 +121,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3109699
+              "duration": 2856700
             }
           }
         ],
@@ -145,7 +145,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 332399
+              "duration": 202499
             }
           },
           {
@@ -158,7 +158,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 293980700
+              "duration": 287989600
             }
           },
           {
@@ -171,7 +171,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 438199
+              "duration": 467199
             }
           },
           {
@@ -184,110 +184,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 376800
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "auth-api;create-an-order-with-valid-token",
-        "keyword": "Scenario",
-        "line": 21,
-        "name": "Create an order with valid token",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 22,
-            "name": "a user with CPF \"41115491873\"",
-            "match": {
-              "location": "features\\step_definitions\\authSteps.js:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 221799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 23,
-            "name": "the user sends a POST request to \"/customer/auth\"",
-            "match": {
-              "location": "features\\step_definitions\\authSteps.js:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 449551699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "the response should be 200",
-            "match": {
-              "location": "features\\step_definitions\\authSteps.js:37"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 520899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "the response should contain a JWT token",
-            "match": {
-              "location": "features\\step_definitions\\authSteps.js:43"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 213699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 26,
-            "name": "the user sends a POST request to \"/orders\" to create an order",
-            "match": {
-              "location": "features\\step_definitions\\authSteps.js:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 331901899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 27,
-            "name": "the order creation response should be 201",
-            "match": {
-              "location": "features\\step_definitions\\authSteps.js:67"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 1672100,
-              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +201\n\n    at World.<anonymous> (D:\\Projetos\\orderly\\ms-testes\\features\\step_definitions\\authSteps.js:70:35)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 28,
-            "name": "the order creation response should contain order details",
-            "match": {
-              "location": "features\\step_definitions\\authSteps.js:73"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "duration": 369100
             }
           }
         ],
