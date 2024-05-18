@@ -1,0 +1,202 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "auth-api;authenticate-with-valid-cpf",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Authenticate with valid CPF",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a user with CPF \"41115491873\"",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7848100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user sends a POST request to \"/customer/auth\"",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62521200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the response should be 200",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1896600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the response should contain a JWT token",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1573300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "auth-api;authenticate-with-invalid-cpf",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Authenticate with invalid CPF",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "a user with CPF \"1\"",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7761799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user sends a POST request to \"/customer/auth\"",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35426999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the response should be 400",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1849599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response should contain an error message \"Invalid CPF.\"",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2960700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "auth-api;authenticate-with-empty-cpf",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Authenticate with empty CPF",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "a user with CPF \"\"",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 227600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "the user sends a POST request to \"/customer/auth\"",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3092399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the response should be 400",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 292099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the response should contain an error message \"CPF is required.\"",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 436199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "auth-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Auth API",
+    "tags": [],
+    "uri": "features\\auth.feature"
+  }
+]
