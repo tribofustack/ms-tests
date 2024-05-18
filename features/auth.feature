@@ -23,6 +23,6 @@ Feature: Auth API
     When the user sends a POST request to "/customer/auth"
     Then the response should be 200
     And the response should contain a JWT token
-    When the user sends a POST request to "/order" to create an order
+    When the user sends a POST request to "/orders" to create an order
     Then the order creation response should be 201
     And the order creation response should contain order details

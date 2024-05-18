@@ -15,11 +15,11 @@
             "line": 4,
             "name": "a user with CPF \"41115491873\"",
             "match": {
-              "location": "features\\step_definitions\\authSteps.js:12"
+              "location": "features\\step_definitions\\authSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 9957700
+              "duration": 8102500
             }
           },
           {
@@ -28,11 +28,11 @@
             "line": 5,
             "name": "the user sends a POST request to \"/customer/auth\"",
             "match": {
-              "location": "features\\step_definitions\\authSteps.js:16"
+              "location": "features\\step_definitions\\authSteps.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 55969400
+              "duration": 479564800
             }
           },
           {
@@ -41,11 +41,11 @@
             "line": 6,
             "name": "the response should be 200",
             "match": {
-              "location": "features\\step_definitions\\authSteps.js:24"
+              "location": "features\\step_definitions\\authSteps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 1911600
+              "duration": 1813300
             }
           },
           {
@@ -54,11 +54,11 @@
             "line": 7,
             "name": "the response should contain a JWT token",
             "match": {
-              "location": "features\\step_definitions\\authSteps.js:30"
+              "location": "features\\step_definitions\\authSteps.js:43"
             },
             "result": {
               "status": "passed",
-              "duration": 1604099
+              "duration": 1786899
             }
           }
         ],
@@ -78,11 +78,11 @@
             "line": 10,
             "name": "a user with CPF \"1\"",
             "match": {
-              "location": "features\\step_definitions\\authSteps.js:12"
+              "location": "features\\step_definitions\\authSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 9529599
+              "duration": 7973500
             }
           },
           {
@@ -91,11 +91,11 @@
             "line": 11,
             "name": "the user sends a POST request to \"/customer/auth\"",
             "match": {
-              "location": "features\\step_definitions\\authSteps.js:16"
+              "location": "features\\step_definitions\\authSteps.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 41703200
+              "duration": 321445299
             }
           },
           {
@@ -104,11 +104,11 @@
             "line": 12,
             "name": "the response should be 400",
             "match": {
-              "location": "features\\step_definitions\\authSteps.js:24"
+              "location": "features\\step_definitions\\authSteps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 1951799
+              "duration": 1818300
             }
           },
           {
@@ -117,11 +117,11 @@
             "line": 13,
             "name": "the response should contain an error message \"Invalid CPF.\"",
             "match": {
-              "location": "features\\step_definitions\\authSteps.js:36"
+              "location": "features\\step_definitions\\authSteps.js:49"
             },
             "result": {
               "status": "passed",
-              "duration": 4222600
+              "duration": 3109699
             }
           }
         ],
@@ -141,11 +141,11 @@
             "line": 16,
             "name": "a user with CPF \"\"",
             "match": {
-              "location": "features\\step_definitions\\authSteps.js:12"
+              "location": "features\\step_definitions\\authSteps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 451900
+              "duration": 332399
             }
           },
           {
@@ -154,11 +154,11 @@
             "line": 17,
             "name": "the user sends a POST request to \"/customer/auth\"",
             "match": {
-              "location": "features\\step_definitions\\authSteps.js:16"
+              "location": "features\\step_definitions\\authSteps.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 3337300
+              "duration": 293980700
             }
           },
           {
@@ -167,11 +167,11 @@
             "line": 18,
             "name": "the response should be 400",
             "match": {
-              "location": "features\\step_definitions\\authSteps.js:24"
+              "location": "features\\step_definitions\\authSteps.js:37"
             },
             "result": {
               "status": "passed",
-              "duration": 324299
+              "duration": 438199
             }
           },
           {
@@ -180,11 +180,114 @@
             "line": 19,
             "name": "the response should contain an error message \"CPF is required.\"",
             "match": {
-              "location": "features\\step_definitions\\authSteps.js:36"
+              "location": "features\\step_definitions\\authSteps.js:49"
             },
             "result": {
               "status": "passed",
-              "duration": 450499
+              "duration": 376800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "auth-api;create-an-order-with-valid-token",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Create an order with valid token",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "a user with CPF \"41115491873\"",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 221799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "the user sends a POST request to \"/customer/auth\"",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 449551699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the response should be 200",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 520899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "the response should contain a JWT token",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 213699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "the user sends a POST request to \"/orders\" to create an order",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 331901899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the order creation response should be 201",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:67"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1672100,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -400\n    +201\n\n    at World.<anonymous> (D:\\Projetos\\orderly\\ms-testes\\features\\step_definitions\\authSteps.js:70:35)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "the order creation response should contain order details",
+            "match": {
+              "location": "features\\step_definitions\\authSteps.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
